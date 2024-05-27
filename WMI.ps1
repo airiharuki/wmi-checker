@@ -4,7 +4,7 @@ $cpu = Get-WmiObject Win32_Processor
 $wmiMonitor = Get-WmiObject Win32_DesktopMonitor
 
 # Get disk drives
-$drives = Get-Partition -DriveType Fixed
+$drives = Get-Disk | Where-Object {$_.DriveType -eq "Fixed"}
 
 # Count online drives
 $onlineDrives = $drives | Where-Object {$_.Status -eq "Online"} | Measure-Object | Select-Object Count
@@ -19,6 +19,8 @@ $ramSize = (Get-WmiObject Win32_PhysicalMemory).Capacity / 1GB | Measure-Object 
 
 # Build the fancy output
 $output = @"
+
+       
         
                                     ....iilll
                           ....iilllllllllllll
@@ -38,8 +40,7 @@ $output = @"
          `^^^^^^lllllll  lllllllllllllllllll
                ````^^^^  ^^lllllllllllllllll
                               ````^^^^^^llll
-
-
+                              
            Windows ($osName $osVersion)
 
            CPU: $cpuModel ($cpuCores Cores)
