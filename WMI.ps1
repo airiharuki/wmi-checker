@@ -20,24 +20,24 @@ $ramSize = (Get-WmiObject Win32_PhysicalMemory).Capacity / 1GB | Measure-Object 
 # Build the fancy output
 $output = @"
         
-                           ....iilll
-                 ....iilllllllllllll
-     ....iillll  lllllllllllllllllll
- iillllllllllll  lllllllllllllllllll
- llllllllllllll  lllllllllllllllllll
- llllllllllllll  lllllllllllllllllll
- llllllllllllll  lllllllllllllllllll
- llllllllllllll  lllllllllllllllllll         WINDOWS-INFO-DUMPER (WID) V1.0.0
- llllllllllllll  lllllllllllllllllll         Copyrighted : 2024 BY ME
-                                            Made by SomBokM3as
- llllllllllllll  lllllllllllllllllll
- llllllllllllll  lllllllllllllllllll
- llllllllllllll  lllllllllllllllllll
- llllllllllllll  lllllllllllllllllll
- llllllllllllll  lllllllllllllllllll
- `^^^^^^lllllll  lllllllllllllllllll
-       ````^^^^  ^^lllllllllllllllll
-                      ````^^^^^^llll
+                                    ....iilll
+                          ....iilllllllllllll
+              ....iillll  lllllllllllllllllll
+          iillllllllllll  lllllllllllllllllll
+          llllllllllllll  lllllllllllllllllll
+          llllllllllllll  lllllllllllllllllll
+          llllllllllllll  lllllllllllllllllll
+          llllllllllllll  lllllllllllllllllll         WINDOWS-INFO-DUMPER (WID) V1.0.0
+          llllllllllllll  lllllllllllllllllll         Copyrighted : 2024 BY ME
+                                                      Made by SomBokM3as
+         llllllllllllll  lllllllllllllllllll
+         llllllllllllll  lllllllllllllllllll
+         llllllllllllll  lllllllllllllllllll
+         llllllllllllll  lllllllllllllllllll
+         llllllllllllll  lllllllllllllllllll
+         `^^^^^^lllllll  lllllllllllllllllll
+               ````^^^^  ^^lllllllllllllllll
+                              ````^^^^^^llll
 
 
            Windows ($osName $osVersion)
