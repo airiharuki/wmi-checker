@@ -15,12 +15,14 @@ $osVersion = $os.Version
 $cpuModel = $cpu.Name
 $cpuCores = $cpu.NumberOfCores
 $monitorName = $wmiMonitor.Manufacturer + " " + $wmiMonitor.ModelName
-$ramSize = (Get-WmiObject Win32_PhysicalMemory).Capacity / 1GB | Measure-Object -Sum | Select-Object Sum
+
+# Get RAM info
+$totalRam = (Get-WmiObject Win32_PhysicalMemory).Capacity / 1GB | Measure-Object -Sum | Select-Object Sum
+$ramSize = $totalRam.Sum
 
 # Build the fancy output
 $output = @"
-
-       
+        
         
                                     ....iilll
                           ....iilllllllllllll
@@ -40,7 +42,6 @@ $output = @"
          `^^^^^^lllllll  lllllllllllllllllll
                ````^^^^  ^^lllllllllllllllll
                               ````^^^^^^llll
-                              
            Windows ($osName $osVersion)
 
            CPU: $cpuModel ($cpuCores Cores)
