@@ -1,12 +1,13 @@
    # Windows DUMP 
-<h3>WINDOWS INFORMATION DUMPER ( WID )💻</h3>
+<h3>WINDOWS INFORMATION DUMPER (WID)💻</h3>
+<h4>THIS IS IN ITS BETA PHASE.</h4>
 
 <h4> This script basically dumps info from ur windows machine 💾</h4>
 - It's updated to run virtually, without downloading any scripts involve.
-<br> - It's free from any virus.
-<br> - IT will dump cpu info and ram and stuff.
-<br> - add more aesthetic stuff.
-<br> - could check for alo of info
+- It's free from any virus.
+- It will dump cpu info and ram and stuff.
+- Aesthetically pleasing to the eyes.
+- Able to display a lot of info.
 <h4>How to run it?</h4>
 
 #### Fully automated installation via PowerShell
